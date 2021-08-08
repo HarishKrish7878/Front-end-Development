@@ -1,0 +1,347 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: burlywood;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    color:rgb(7, 7, 7);
+    font-size: 30px;
+    text-align: center;
+}
+
+#logo img{
+    height: 50px;
+    margin: 5px 6px;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    margin-left: 100px;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a{
+    color:rgb(7, 7, 7);
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color:white;
+    
+}
+.right{
+    margin-left:500px;
+}
+
+/* banner Section */
+#banner{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner::before{ 
+    content: "";
+    position: absolute;
+    background: url('alexander-naglestad-RFhq0SrrgEg-unsplash.jpg') no-repeat center center/cover;
+    height: 700px;
+    top:1px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#banner h1{
+    color:white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* section */
+#section1{
+    margin: 34px;
+    display: flex;
+    box-sizing: border-box;
+
+}
+#container1{
+    margin: 0px 0px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-left: 134px;
+}
+
+#container1 img{
+    height: 700px;
+    width: 500px;
+}
+
+#container{
+    margin: 10px 10px;
+    display: flex;
+    margin-left: 54px;
+}
+
+#container img{
+    height: 700px;
+    width: 500px;
+    margin-left: 590px;
+    margin-bottom: 500px;
+    margin-top: -753px;
+}
+
+.h-center1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding: 12px;
+    margin-left: 500px;
+    color: black;
+    margin-top: 20px;
+    word-break: break-word;
+}
+
+[data-layout-variant="50-50_big"]{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section2{
+    margin: 34px;
+    display: flex;
+    box-sizing: border-box;
+}
+#men{
+    margin: 0px 0px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-left: 50px;
+}
+#men img{
+    height: 450px;
+    width: 300px;
+    margin-top: -431px;
+    margin-left: 280px;
+}
+#men1{
+    margin: 10px 10px;
+    display: flex;
+    margin-left: 54px;
+}
+#men1 img{
+    height: 450px;
+    width: 300px;
+    margin-left: 580px;
+    margin-bottom: 500px;
+    margin-top: -464px;
+}
+[data-layout-variant="50-50_big"]{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section3{
+    margin: 34px;
+    display: flex;
+    box-sizing: border-box;
+}
+#women{
+    margin: 0px 0px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-left: 50px;
+}
+#women img{
+    height: 450px;
+    width: 300px;
+    margin-top: -431px;
+    margin-left:-452px;
+}
+#women1{
+    margin: 10px 10px;
+    display: flex;
+    margin-left: 54px;
+}
+#women1 img{
+    height: 450px;
+    width: 300px;
+    margin-left: -701px;
+    margin-bottom: 500px;
+    margin-top: -391px;
+}
+
+[data-layout-variant="50-50_big"]{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.h-center3{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding: 12px;
+    margin-left: 550px;
+    color: black;
+    margin-top: -483px;
+}
+.h-center2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding: 12px;
+    margin-left: 560px;
+    color: black;
+    margin-top: -483px;
+    word-break: break-word;
+}
+/* utility classes */
+.h-center{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding: 12px;
+    margin-left: 350px;
+    margin-top: 20px;
+
+}
+
+.btn{
+    text-decoration: none;
+    border-radius: 7px;
+    padding:5px 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+    border-color: rgb(51, 21, 1);
+
+}
+.btn:hover{
+    background-color: lightgray;
+}
+
+#booking{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#booking::before{
+    content: "";
+    position: absolute;
+    background: url('bernard-hermant-hQ3WZnY3yZ0-unsplash.jpg') no-repeat center center/cover;
+    height: 500px;
+    top:3000px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+.align--center{
+    text-align: centers;
+}
+ .book1 p{
+    font-size: 1.14rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: .105em;
+    text-transform: uppercase;
+    color: inherit;
+    margin-top: -941px;
+}
+
+.book2 p{
+    font-size: 1.14rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .105em;
+    text-transform: initial;
+    color: inherit;
+    margin-top: -869px;
+}
+
+.book-button{
+    margin-left:0px;
+    margin-top: -807px;
+}
+.book{
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 12px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 0px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.ads{
+    text-align: center;
+}
+
+.ads1{
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 38px;
+}
+.adsbtn{
+    display: inline;
+    padding:5px 10px;
+    border-radius: 4px;
+    border:2px solid black;
+    font-weight: bold;
+    margin: 5px 353px;
+}
+.adsbtn1{
+    display: inline;
+    padding:5px 10px;
+    border-radius: 4px;
+    border:2px solid black;
+    font-weight: bold;
+    margin: 5px 70px;
+}

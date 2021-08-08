@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="backend.php">
+        <h1>  Job Application </h1>
+        <style>
+        h1{
+            text-align: center;
+            font-size: 60px;
+            background-color:rgb(151, 129, 0);
+            font-style: italic;
+            
+        }
+        input{
+            background-color: darksalmon;
+        }
+       </style>
+       <h2><b><i>Please complete the form below to apply for a position with us.</i></b></h2>
+       <hr/>
+       <style>
+           
+                h2{
+                    text-align: center;
+                }
+       </style>
+       <div>
+             <b> First Name : </b>       <input type="text">
+       </div>
+       <br>
+       <div>
+             <b> Last Name : </b>        <input type="text">
+       </div>
+       <br>
+       <div>
+             <b> Age : </b>              <input type="number">
+       </div>
+       <br>
+        <div>
+             <b> Birth Date : </b>             <input type="month"> 
+            </div>
+            <br>
+        <div>
+             <b>Email Address :</b>     <input type="email">
+        </div>
+        <br>
+        <div>
+             <b>Phone Number :</b>          <input type="number">
+        </div>
+        <br>
+        <div>
+            <b>Current Address :</b> <br>
+            <textarea name="My Text"  cols="50"  rows="8" ></textarea>    
+         </div>
+         <br>
+         <div>
+             <b>Linked In :</b>      <input type="url">    
+         </div>
+         <br>
+         <div>
+             <label for=position><b>Position Applied</b></label><br>
+             <select name="My position"  id="position">
+                <option value="......">Choose the Option</option>
+                <option value="ST">Software Testing</option>
+                  <option value="Front end">Front end Development</option>
+                  <option value="DBMS">Database management System</option>
+                  <option value="java">Java</option>
+             </select>
+         </div>
+         <br>
+         <div>
+             <label for=hear><b>How Did You Hear about Us :</b></label><br>
+             <select name="My Hear" id="hear">
+                 <option value=".....">Choose the Option</option>
+                 <option value="LI">Linked In</option>
+                 <option value="FB">FaceBook</option>
+                 <option value="SM">Social Media</option>
+                 <option value="E">Event</option>
+             </select>
+         </div>
+         <br>
+         <div>
+              <b>Available Date :</b>   <input type="month">
+         </div>
+         <br>
+         <div>
+               <b>Upload The Resume :</b><br>
+                   <input type="file">
+         </div>
+         <br>
+         <div>
+             <b>Cover Letter :</b><br>
+               <textarea name="my Text1"  cols="50" rows="10"></textarea>
+         </div>
+         <br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr/>
+            <br>
+            <h3>
+                  <i><b>Thank You</b></i>
+            </h3>
+            <Style>
+                   h3{
+                        font-size: 20px;
+                        text-align: center;
+
+                   }
+            </Style>
+            <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        body {
+      font-family: "Baloo Bhai", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("pexels-pixabay-325876.jpg");
+      background-size: 2750px;
+      background-attachment: fixed;
+      
+    }
+
+    .left {
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 20px;
+    }
+
+    .left img {
+      width: 136px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      line-height: 19px;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .mid {
+      display: block;
+      width: 36%;
+      margin: 29px auto;
+      margin-top: 60px;
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 45px;
+      display: inline-block;
+      padding-top: 20px;
+    }
+    .btn {
+      font-family: "Baloo Bhai", cursive;
+      margin: 0px 9px;
+      background-color: rgb(175, 159, 159);
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: rgb(31, 30, 30);
+    }
+
+    .search {
+        
+        color: white;
+        padding: 55px 75px;
+        display: inline-block;
+      }
+      .navbar input {
+        border: 4px solid gray;
+        border-radius: 21px;
+        padding: 11px 80px;
+        width: 250px;
+        margin-left: 900px;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: normal;
+        border-color:lightgray;
+        border-image: initial;
+        text-transform: none;
+        text-align: start;
+        text-rendering: auto;
+        margin-bottom: 80px;
+      }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+     .desktop-iconSearch {
+         display: inline-block;
+     }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 22px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      
+    }
+    .container {
+      border: 2px solid rgb(10, 210, 245);
+      margin: 126px 80px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 28px;
+      font-size: 30px;
+    }
+    h1{
+      color: rgb(128, 225, 255);
+    }
+    #order{
+      font-family: "Baloo Bhai", cursive;
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 30px;
+      border-radius: 8px;
+    }
+
+    .formgroup input {
+      font-family: "Baloo Bhai", cursive;
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 30px;
+      border-radius: 8px;
+    }
+
+    .container h1 {
+      text-align: center;
+    }
+
+    .container button {
+      display: block;
+      width: 74%;
+      margin: 20px auto;
+    }
+    .formgroup1 input{
+         background-color: salmon;
+         font-family: "Baloo Bhai", cursive;
+         text-align: center;
+         display: block;
+         width: 508px;
+         padding: 1px;
+         border: 2px solid black;
+         margin: 11px auto;
+         font-size: 30px;
+         border-radius: 8px;
+    }
+    .formgroup1 input:hover{
+         background-color: slategrey;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box of logo-->
+        <div class="left">
+            <img src="ajio.images.png" alt=""/>
+            <div>
+                Ajio
+            </div>
+        </div>
+        <!-- Mid box for navbar-->
+         <div class="mid">
+             <ul class="navbar">
+                 <li><a href="#"> Men</a></li>
+                 <li><a href="#">Women</a></li>
+                 <li><a href="#">Kids</a></li>
+                 <li><a href="#">Home & Living</a></li>
+                 <li><a href="#">Beauty</a></li>
+              </ul>
+            </div>
+            <div class="Search">
+              <input
+               type="text"
+               name="search"
+               id="search"
+               placeholder="search this products,brand and more"
+              />
+              <a class="submit">
+                <span class="desktop-iconsearch"></span>
+              </a>
+          </div>
+            <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Sign In</button>
+        <button class="btn">Customer care</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Shoppping cart</h1>
+      <h2>Customer Details</h2>
+      <form action="noaction.php">
+           <div class="formgroup">
+             <b>First Name :</b>   <input type="text">
+           </div>
+           <br>
+           <div class="formgroup">
+              <b>Phone Number :</b>  <input type="number">
+           </div>
+           <br>
+          <div class="formgroup">
+            <b>pin :</b>   <input type="number">
+          </div>
+          <br>
+          <div class="formgroup">
+            <b>Address :</b>   <input type="text">
+          </div>
+          <br>
+          <div class="formgroup">
+            <b>City :</b>    <input type="text">
+          </div>
+          <br>
+          <div class="formgroup">
+            <b>State :</b>    <input type="text">
+          </div>
+          <br>
+          <h3>Product Details</h3>
+          <div class="formgroup">
+            <label for="order"> <b>Order now</b></label><br>
+            <select name="my order"   id="order">
+                 <option value="s">Shirt</option>
+                 <option value="P">Pant</option>
+                 <option value="t">shots</option>
+                 <option value="su">Suit</option>
+            </select>
+          </div>
+          <br>
+          <div class="formgroup">
+            <b> barcode number :</b>  <input type="number">
+          </div>
+          <br>
+          <div class="formgroup">
+              <b>Product name :</b>    <input type="text">
+          </div>
+          <br>
+          <div class="formgroup">
+            <b>Quantity :</b>       <input type="number">
+          </div>
+          <br>
+          <div class="formgroup">
+               <b>Cost of product :</b>    <input type="number">
+          </div>
+          <br>
+           <div class="formgroup">
+             <b>Discount :</b>      <input type="number">
+           </div>
+           <br>
+           <div class="formgroup">
+             <b>Delivery charges :</b>   <input type="number">
+           </div>
+           <br>
+           <br>
+           <div Class="formgroup1">
+             <input type="submit" value="Place your Order and Pay">
+           </div>
+      </form>
+    </div>
+</body>
+</html>
