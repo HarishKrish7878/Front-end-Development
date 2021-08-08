@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E bubbling</title>
+</head>
+<body>
+    <div id=nav1>
+        <h1>Bubbling</h1>
+        <p id= para1>Click me</p>
+    </div><br>
+    <div id=nav2>
+          <h2>Capturing</h2>
+          <p id=para2>Click me</p>
+    </div><br>
+    <script>
+         let para1 = document.getElementById("para1").addEventListener("click", function() {
+            alert("You clicked the white element!");
+         }, false);
+
+         let nav1 = document.getElementById("nav1").addEventListener("click", function() {
+            alert("You clicked the orange element!");
+         }, false);
+
+         let para2 = document.getElementById("para2").addEventListener("click", function() {
+            alert("You clicked the white element!");
+         }, true);
+
+         let nav2 = document.getElementById("nav2").addEventListener("click", function() {
+            alert("You clicked the orange element!");
+         }, true);
+    </script>
+    <style>
+        #nav1,#nav2{
+            background-color: rgb(14, 137, 158);
+            padding: 50px;
+        }
+        #para1,#para2{
+            background-color: white;
+            font-size: 15px;
+            border: 1px solid;
+            padding: 15px;
+        }
+    </style>
+</body>
+</html>

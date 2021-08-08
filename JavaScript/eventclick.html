@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E click</title>
+</head>
+<body>
+    <h1>
+        this is a Click event handler
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, id officia molestiae nulla maiores tenetur.</p>
+     
+    <button id = "btn"> solve</button>
+    <script>
+         var m = document.getElementById("btn");
+             m.addEventListener("click", myFunction);
+            m.addEventListener("click", OtherFunction);
+
+         function myFunction() {
+            alert ("Hello World!");
+         }
+
+         function OtherFunction() {
+            alert ("This function was also executed!");
+         }
+    </script>
+    <style>
+        #btn{
+            padding:20px 20px;
+            background-color: rgb(163, 163, 161);
+            border: 2px solid rgb(255, 254, 254);
+            color: rgb(10, 9, 9);
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        </style>
+</body>
+</html>

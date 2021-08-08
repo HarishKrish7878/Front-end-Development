@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E parameter</title>
+</head>
+<body>
+    <h1>This is a Passing parameter</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos quod recusandae pariatur aut reprehenderit! Dignissimos optio iusto nisi qxuo!</p>
+
+    <button id="ads" >Solve it</button>
+    <p id="demo"> </p>
+    <script>
+        let x1 = 8;
+        let x2 = 7;
+         let ads = document.getElementById("ads").addEventListener("click", function() {
+                 myFunction(x1, x2);
+                 });
+
+        function myFunction(a, b) {
+          let ads = document.getElementById("demo").innerHTML = a * b;
+          }
+    </script>
+    <style>
+        #ads{
+            padding:10px 10px;
+            background-color: rgb(163, 163, 161);
+            border: 2px solid rgb(255, 254, 254);
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        </style>
+
+</body>
+</html>
